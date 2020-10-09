@@ -1,12 +1,11 @@
 ---
 title:
 output: 
-  rmarkdown::github_document:
-    includes:
-      after_body: git_notebook_test.nb.html
+  md_document:
+    variant: markdown_github
 ---
 
-```{r, echo = F}
-rmarkdown::pandoc_convert("./git_notebook_test.nb.html", to = "gfm")
+```{r}
+htmltools::includeHTML("./git_notebook_test.nb.html")
 ```
 
