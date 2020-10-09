@@ -5,3 +5,8 @@ output:
     includes:
       after_body: git_notebook_test.nb.html
 ---
+
+```{r, echo = F}
+rmarkdown::pandoc_convert("./git_notebook_test.nb.html", to = "gfm")
+```
+
